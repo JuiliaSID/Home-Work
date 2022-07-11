@@ -1,0 +1,30 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+span {
+    color: blue;
+}
+
+#name {
+    border: 10px solid red;
+}
+
+.pink {
+    color: pink;
+}
+
+.color-first,
+.color-second {
+    color: brown;
+}
+
+div h5 {
+    color: cyan;
+}

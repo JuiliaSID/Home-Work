@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+    <div>
+        <h1>Типы селекторов</h1>
+        <p>
+            Селектор определяет, к какому элементу применять то или иное CSS-правило.
+        </p>
+        <div>
+            <h3>Селекторы по типу элемента</h3>
+            <p>Этот базовый селектор выбирает тип элементов, к которым будет применяться правило.</p>
+            <p>Синтаксис: элемент</p>
+            <p>Пример: селектор span выберет все элементы c тегом "span"</p>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, hic.</span></p>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, hic.</span></p>
+
+        </div>
+        <div>
+            <h3>Селекторы по идентификатору</h3>
+            <p>Этот базовый селектор выбирает элементы, основываясь на значении их id атрибута.
+                Не забывайте, что идентификатор должен быть уникальным, т. е. использоваться только для одного
+                элемента в HTML-документе.</p>
+            <p>Синтаксис: #имяИдентификатора</p>
+            <p>Пример: селектор #name выберет элемент с идентификатором name
+                (который был определён в атрибуте id="name").</p>
+            <p><input type="name"></p>
+            <p><input id="name" type="name"></p>
+            <p><input type="name"></p>
+        </div>
+        <div>
+            <h3>Селекторы по классу</h3>
+            <p>Этот базовый селектор выбирает элементы, основываясь на значении их атрибута class.</p>
+            <p>Синтаксис: .имяКласса</p>
+            <p>Пример: селектор .index выберет все элементы с соответствующим классом (который
+                был определён в атрибуте class="index").</p>
+            <p class="pink">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, illum?</p>
+        </div>
+        <div>
+            <h3>Селекторы групп</h3>
+            <p>Чтобы применить одинаковый стиль сразу к нескольким элементам веб-страницы
+                используется групповой селектор. Конечно, в перечислении могут участвовать
+                не только селекторы тегов, но и классы, и идентификаторы. Если нужно
+                стилизовать абсолютно все элементы страницы, можно задействовать универсальный селектор *.</p>
+            <p>Синтаксис: элемент, елемент / .имяКласса, .имяКласса</p>
+            <p>Пример: color-first, color-second выберет оба элемента для стилизации текста</p>
+            <p><span class="color-first">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem,
+                    saepe!</span></p>
+            <p><span class="color-second">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem,
+                    saepe!</span></p>
+        </div>
+        <div>
+            <h3>Селекторы групп</h3>
+            <p>Комбинатор ' ' (пробел) выбирает элементы, которые находятся внутри указанного
+                элемента (вне зависимости от уровня вложенности).</p>
+            <p>Синтаксис: A B</p>
+            <p>Пример: селектор div h5 выберет все элементы "h5", которые находятся внутри элемента "div".</p>
+            <div>
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, laudantium.<h5>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, officiis.</span>
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, laudantium.<h5>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

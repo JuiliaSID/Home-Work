@@ -1,7 +1,229 @@
-*, html, body{
+*,
+html,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    }
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Врхний блок (меню + логотип) */
+.container {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.lightgrey {
+    background: #EFEFEF
+}
+
+.white {
+    background: white;
+}
+
+.lightgrey ul {
+    width: 500px;
+    margin: auto;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 17px 13px 16px;
+}
+
+.wrap-logo {
+    border-bottom: 1px solid #EFEFEF;
+    margin: 0 405px;
+}
+
+.logo {
+    float: left;
+    margin: 20px 0 30px;
+}
+
+.contacts {
+    float: right;
+    margin: 40px 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.font-color {
+    color: black;
+}
+
+.btn {
+    width: 170px;
+    height: 40px;
+    background: none;
+    border: 2px solid #F13C6E;
+    border-radius: 40px;
+}
+
+.menu-bottom {
+    background: none;
+    margin: 30px 0;
+}
+
+.menu-bottom ul {
+    width: 675px;
+}
+
+/* Основной контент */
+.font-color-white {
+    color: white;
+}
+
+/* Блок с креслом */
+.chair {
+    background: url(../img/Background.png) center/cover no-repeat;
+    padding: 192px 0;
+}
+
+.chair-text {
+    width: 310px;
+    margin-left: 405px;
+}
+
+.chair-text h1 {
+    font-size: 48px;
+}
+
+.chair-text div {
+    padding-bottom: 15px;
+}
+
+.btn-second {
+    border: 2px solid white;
+}
+
+/* Товары и реклама */
+.product {
+    margin: auto;
+}
+
+/* Карточки */
+.offer {
+    width: 1140px;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.card {
+    width: 255px;
+    height: 363px;
+    text-align: center;
+    padding: 25px 0;
+    margin: 40px 15px;
+    float: left;
+}
+
+.card img,
+p,
+h3 {
+    margin-bottom: 10px;
+}
+
+.btn-third {
+    width: 130px;
+    height: 35px;
+    background: #F13C6E;
+    border: none;
+}
+
+/* Реклама */
+.adver {
+    width: 500px;
+    height: 212px;
+    background: #F13C6E;
+    padding: 27px 45px 35px 35px;
+    float: left;
+}
+
+.adver-text {
+    width: 250px;
+    height: 140px;
+    float: left;
+}
+
+.adver-text h4,
+p,
+input,
+button {
+    margin-top: 15px;
+}
+
+.adver img {
+    width: 170px;
+    float: right;
+}
+
+.adver input {
+    width: 225px;
+    height: 35px;
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.adver-2 {
+    float: right;
+}
+
+/*Бренды*/
+.brand-link {
+    width: 280px;
+    height: 120px;
+    margin: auto;
+    display: inline-block;
+    border: 1px solid #EFEFEF;
+    text-align: center;
+    font-size: 0;
+    padding: 30px 0;
+}
+
+/* Популярные категории */
+.category-menu {
+    width: 255px;
+    margin-left: 30px;
+    float: left;
+}
+
+.menu-head {
+    width: 99px;
+    padding-bottom: 30px;
+}
+
+.category-menu-item {
+    margin: 30px 0;
+}
+
+.category-menu-item a {
+    color: #828282;
+}
+
+.border {
+    border-top: 1px solid #EFEFEF;
+    border-bottom: none;
+}
+
+/* Меню + логотип */
+.logo-2 {
+    margin: 35px 0;
+}
+
+.logo-bottom {
+    width: 45px;
+    height: 45px;
+    margin-left: 15px;
+}
+
+.menu-footer,
+a {
+    text-align: center;
+    color: #828282;
+}

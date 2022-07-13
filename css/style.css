@@ -1,7 +1,58 @@
-*, html, body{
+*,
+html,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    }
+}
+
+.menu {
+    font-size: 0;
+}
+
+.menu-item {
+    display: inline-block;
+}
+
+.menu-item-link {
+    display: block;
+    background: grey;
+    color: aqua;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+.menu-item-link:hover {
+    background: lavender;
+    color: palevioletred;
+}
+
+.menu-item-link::before {
+    content: '\2740';
+    margin-right: 10px;
+}
+
+.menu-inner {
+    position: absolute;
+    display: none;
+}
+
+.menu-inner .menu-item,
+.menu-item:hover>.menu-inner,
+.item-2:hover .inner-2 {
+    display: block;
+}
+
+.inner-2 {
+    position: absolute;
+    left: 275px;
+    top: 84px;
+    display: none;
+}
+
+.link-2 {
+    width: 275px;
+}

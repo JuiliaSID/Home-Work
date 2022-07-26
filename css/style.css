@@ -1,7 +1,92 @@
-*, html, body{
+*,
+html,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+}
+
+.flashlight {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    left: 22%;
+    top: 8%;
+    animation: flashlight 1s infinite linear;
+}
+
+@keyframes flashlight {
+    from {
+        background: blue;
+        box-shadow: 0 0 20px blue;
     }
+
+    to {
+        background: red;
+        box-shadow: 0 0 20px red;
+    }
+
+}
+
+.car {
+    width: 300px;
+    position: absolute;
+    left: 0;
+    top: 20%;
+}
+
+.wheel {
+    width: 70px;
+    position: absolute;
+    animation: wheel 1s infinite linear;
+}
+
+.wheel-1 {
+    left: 0;
+    bottom: 0;
+}
+
+.wheel-2 {
+    left: 65%;
+    bottom: 0;
+}
+
+@keyframes wheel {
+    from {}
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.move {
+    width: 300px;
+    height: 180px;
+    position: fixed;
+    left: 0;
+    top: calc(80% - 250px);
+    animation: move 10s infinite linear;
+}
+
+@keyframes move {
+
+    0% {
+        transform: rotateY(180deg);
+    }
+
+    49% {
+        transform: rotateY(180deg);
+    }
+
+    50% {
+        left: calc(100% - 300px);
+        bottom: 30%;
+        transform: none;
+    }
+
+    100% {}
+}
